@@ -1,455 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ========== Meta ========== -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Admission | As Sunnah Skill Development Institute</title>
-  <meta name="description" content="Apply to the Professional Automotive Technician Training Program at As Sunnah Skill Development Institute. See eligibility, fees, schedule, and how to apply." />
-  <meta name="author" content="As Sunnah Skill Development Institute" />
-  <link rel="icon" href="../assets/favicon.png" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Admission | As Sunnah Skill Development Institute" />
-  <meta property="og:description" content="Join the Professional Automotive Technician Training Program. Admission details, fees, and timeline." />
-  <meta property="og:url" content="https://skill-assunnah.github.io/admission/admission.html" />
-  <meta property="og:image" content="https://skill-assunnah.github.io/assets/cover.jpg" />
-
-  <!-- Schema.org (Course) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "Professional Automotive Technician Training",
-    "provider": {
-      "@type": "Organization",
-      "name": "As Sunnah Skill Development Institute",
-      "url": "https://skill-assunnah.github.io/"
-    },
-    "description": "A structured 12-week program covering safety, tools, motorcycle servicing, engine systems, diagnostics, and hybrid/EV technologies.",
-    "hasCourseInstance": {
-      "@type": "CourseInstance",
-      "courseMode": "In person",
-      "startDate": "2025-09-01",
-      "endDate": "2025-11-24",
-      "location": {
-        "@type": "Place",
-        "name": "As Sunnah Skill Development Institute",
-        "address": "Dhaka, Bangladesh"
-      }
-    }
-  }
-  </script>
-
-  <!-- ========== Styles (Embedded) ========== -->
+  <title>Automobile | Admission Resource</title>
+  <meta name="description" content="Pre-admission resources for the Professional Automotive Technician Training Program. Full glossary, short Q&A, and MCQs." />
   <style>
-    :root{
+    :root {
       --bg: #ffffff;
-      --card: #f8fafc;
-      --text: #0f172a;
+      --text: #1e293b;
       --muted: #475569;
       --brand: #0ea5e9;
-      --brand-600: #0284c7;
-      --ring: rgba(14,165,233,.3);
-      --ok: #16a34a;
-      --warn: #f59e0b;
-      --danger: #ef4444;
       --border: #e2e8f0;
-      --shadow: 0 6px 28px rgba(2,8,23,.08), 0 2px 10px rgba(2,8,23,.04);
-      --radius: 16px;
+      --card: #f8fafc;
+      --radius: 12px;
+      --shadow: 0 6px 20px rgba(2, 8, 23, .06);
     }
-    @media (prefers-color-scheme: dark){
-      :root{
+    @media (prefers-color-scheme: dark) {
+      :root {
         --bg: #0b1220;
-        --card: #0f172a;
-        --text: #e5e7eb;
+        --text: #e2e8f0;
         --muted: #94a3b8;
         --brand: #38bdf8;
-        --brand-600: #0ea5e9;
-        --ring: rgba(56,189,248,.35);
-        --ok: #22c55e;
-        --warn: #fbbf24;
-        --danger: #f87171;
         --border: #1f2937;
-        --shadow: 0 8px 36px rgba(0,0,0,.45);
+        --card: #111827;
+        --shadow: 0 10px 28px rgba(0,0,0,.45);
       }
     }
-
-    html,body{height:100%}
-    body{
-      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-      color: var(--text); background: radial-gradient(1200px 600px at 20% -10%, rgba(14,165,233,.08), transparent 60%) , var(--bg);
-      line-height:1.6;
+    * { box-sizing: border-box }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
     }
-    a{color:var(--brand); text-decoration:none}
-    a:hover{color:var(--brand-600); text-decoration:underline}
-    .container{max-width:1100px; margin-inline:auto; padding: clamp(16px, 2vw, 28px)}
-    .btn{
-      display:inline-flex; align-items:center; gap:.6rem; padding:.85rem 1.2rem; border-radius:999px;
-      background: var(--brand); color:white; border:1px solid transparent; box-shadow: var(--shadow); font-weight:600;
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: .9rem 1rem;
+      display: flex; align-items: center; justify-content: space-between;
     }
-    .btn:hover{background:var(--brand-600); text-decoration:none}
-    .btn.ghost{background:transparent; color:var(--brand); border-color:var(--brand)}
-    .pill{display:inline-flex; align-items:center; gap:.5rem; padding:.35rem .7rem; border-radius:999px; background:var(--card); border:1px solid var(--border); color:var(--muted); font-size:.85rem}
-    header.site{
-      position: sticky; top:0; z-index: 50; backdrop-filter: blur(10px);
-      background: color-mix(in srgb, var(--bg), transparent 15%); border-bottom:1px solid var(--border)
+    .logo { margin: 0; font-size: 1.2rem; font-weight: 800; color: var(--brand) }
+    nav a {
+      margin-left: 1rem; color: var(--muted); text-decoration: none; font-weight: 600;
     }
-    nav.bar{display:flex; align-items:center; justify-content:space-between; gap:1rem}
-    .brand{display:flex; align-items:center; gap:.8rem; font-weight:800; letter-spacing:.2px}
-    .brand img{width:36px; height:36px; border-radius:8px; border:1px solid var(--border)}
-    .links{display:flex; gap:1rem; flex-wrap:wrap}
-    .links a{font-weight:600; color:var(--muted)}
-    .hero{
-      padding: 56px 0 22px;
+    nav a:hover { color: var(--brand) }
+    /* Main */
+    main { max-width: 980px; margin: 0 auto; padding: 1.2rem 1rem 2.5rem }
+    .lead {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.2rem 1.2rem;
+      box-shadow: var(--shadow);
+      margin: 1rem 0 1.2rem;
     }
-    .hero .wrap{
-      background: linear-gradient(180deg, color-mix(in srgb, var(--card), transparent 0%), color-mix(in srgb, var(--card), transparent 30%) 60%, transparent 100%);
-      border:1px solid var(--border); border-radius: calc(var(--radius) + 6px);
-      box-shadow: var(--shadow); overflow:hidden;
+    h1 { font-size: clamp(1.3rem, 1.2rem + .8vw, 1.8rem); margin: .4rem 0 .6rem }
+    h2 { color: var(--brand); margin: 0 0 .8rem; font-size: 1.25rem }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.2rem;
+      margin: 1rem 0;
     }
-    .hero-grid{
-      display:grid; grid-template-columns: 1.1fr .9fr; gap: clamp(16px, 2vw, 28px);
-      padding: clamp(18px, 2.5vw, 32px);
+    details {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: .8rem 1rem;
+      margin: .6rem 0;
     }
-    .hero h1{
-      margin: .2rem 0 0; font-size: clamp(1.7rem, 2.8vw + .5rem, 2.6rem); line-height:1.2;
-      letter-spacing:.2px;
+    summary { cursor: pointer; font-weight: 700 }
+    .muted { color: var(--muted) }
+    .note {
+      border-left: 4px solid var(--brand);
+      padding-left: .8rem; margin: .6rem 0;
+      color: var(--muted);
     }
-    .sub{color:var(--muted); font-size: clamp(1rem, .6vw + .8rem, 1.1rem)}
-    .hero-cta{display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1rem}
-    .stats{display:grid; grid-template-columns: repeat(3,1fr); gap:10px; margin-top:1rem}
-    .stat{background:var(--bg); border:1px solid var(--border); border-radius:12px; padding:.9rem; text-align:center}
-    .stat .k{font-size:1.2rem; font-weight:800}
-    .badge{font-size:.8rem; color:var(--muted)}
-    .notice{
-      display:flex; gap:.7rem; align-items:flex-start; background: color-mix(in srgb, var(--warn), transparent 88%);
-      border:1px solid color-mix(in srgb, var(--warn), var(--border) 65%); padding:.8rem 1rem; border-radius:12px; margin-top:.8rem
+    /* Lists */
+    ul { padding-left: 1.15rem; margin: .4rem 0 }
+    li { margin: .28rem 0 }
+    /* Two column helper (collapsible content stays fluid) */
+    .cols { columns: 2; column-gap: 1.2rem }
+    .cols > * { break-inside: avoid }
+    @media (max-width: 900px) { .cols { columns: 1 } }
+    /* Footer */
+    footer {
+      text-align: center; padding: 1rem; color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 1.2rem;
     }
-
-    section{padding: clamp(14px, 2vw, 24px) 0}
-    .cards{display:grid; grid-template-columns: repeat(3,1fr); gap: clamp(12px, 1.6vw, 20px)}
-    .card{background:var(--card); border:1px solid var(--border); border-radius: var(--radius); padding:1rem; box-shadow: var(--shadow)}
-    .card h3{margin:.3rem 0 .3rem}
-    .meta{color:var(--muted); font-size:.95rem}
-    .list{margin:.2rem 0; padding-left:1.2rem}
-    .list li{margin:.3rem 0}
-    .kpis{display:grid; grid-template-columns: repeat(4,1fr); gap: clamp(12px, 1.6vw, 20px)}
-    .kpi{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:1rem}
-    .kpi .num{font-size:1.6rem; font-weight:800}
-    .timeline{display:grid; gap:10px}
-    .step{display:grid; grid-template-columns: 140px 1fr; gap:1rem; align-items: start}
-    .step .t{font-weight:700}
-    .faq{display:grid; gap:10px}
-    details{
-      background:var(--card); border:1px solid var(--border); border-radius:14px; padding:.9rem 1rem; box-shadow: var(--shadow)
-    }
-    summary{cursor:pointer; font-weight:700}
-    .muted{color:var(--muted)}
-    .grid-2{display:grid; grid-template-columns: 1fr 1fr; gap: clamp(12px, 1.8vw, 20px)}
-    .accent{border-left:4px solid var(--brand); padding-left:.9rem}
-    .foot{
-      margin-top: 28px; padding: 18px 0 32px; border-top:1px solid var(--border); color:var(--muted); font-size:.95rem
-    }
-
-    /* Table */
-    .table{width:100%; border-collapse: collapse; background:var(--card); border:1px solid var(--border); border-radius:12px; overflow:hidden; box-shadow: var(--shadow)}
-    .table th, .table td{padding:.75rem .8rem; border-bottom:1px solid var(--border); text-align:left}
-    .table th{background: color-mix(in srgb, var(--card), #ffffff 6%); font-weight:700}
-    .table tr:last-child td{border-bottom:none}
-
-    /* Small screens */
-    @media (max-width: 900px){
-      .hero-grid{grid-template-columns: 1fr}
-      .cards{grid-template-columns: 1fr}
-      .kpis{grid-template-columns: repeat(2,1fr)}
-      .stats{grid-template-columns: repeat(3,1fr)}
-      .grid-2{grid-template-columns: 1fr}
-      .step{grid-template-columns: 1fr}
+    /* Small helper styles */
+    .tag { display:inline-block; background:#e0f2fe20; color:var(--brand); border:1px solid var(--border); border-radius:999px; padding:.25rem .6rem; font-size:.85rem; font-weight:700 }
+    .search-tip {
+      font-size: .95rem; padding:.6rem .75rem; border:1px dashed var(--border); border-radius:10px; background: transparent;
     }
   </style>
 </head>
 <body>
-  <!-- ========== Header ========== -->
-  <header class="site">
-    <div class="container">
-      <nav class="bar" aria-label="Primary">
-        <div class="brand">
-          <img src="../assets/logo.png" alt="Institute logo" />
-          <span>As Sunnah Skill Development Institute</span>
-        </div>
-        <div class="links">
-          <a href="../index.html">Home</a>
-          <a href="../automotive-course/pre-admission.html">Pre-Admission</a>
-          <a href="../course-outline.html">Course Outline</a>
-          <a href="../weekly-module.html">Weekly Module</a>
-          <a href="../daily-module.html">Daily Module</a>
-          <a href="../about.html">About</a>
-        </div>
-      </nav>
-    </div>
+  <header>
+    <h1 class="logo">Automobile</h1>
+    <nav aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../course-outline.html">Course Overview</a>
+      <a href="#">Admission Resource</a>
+    </nav>
   </header>
 
-  <!-- ========== Hero ========== -->
-  <section class="hero">
-    <div class="container">
-      <div class="wrap">
-        <div class="hero-grid">
-          <div>
-            <span class="pill" aria-label="Program intake">Now Enrolling • 4th Batch</span>
-            <h1>Admission — Professional Automotive Technician Training</h1>
-            <p class="sub">
-              A structured <strong>12-week</strong> program aligned with industry practice. Master safety, tools, motorcycle servicing, diagnostics, engine systems, and entry-level hybrid/EV concepts.
-            </p>
-            <div class="hero-cta">
-              <a class="btn" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank" rel="noopener">Apply Now</a>
-              <a class="btn ghost" href="../automotive-course/pre-admission.html">Pre-Admission Resources</a>
-            </div>
-            <div class="notice" role="note">
-              <span>📌</span>
-              <div>
-                <strong>Key date:</strong> Classes target start <u>1 Sept 2025</u>. Seats are limited. Submit your application early. (Update these dates as needed.)
-              </div>
-            </div>
-            <div class="stats" aria-label="Program quick stats">
-              <div class="stat"><div class="k">12 Weeks</div><div class="badge">3 Theory • 4 Practical per day</div></div>
-              <div class="stat"><div class="k">Beginner–Intermediate</div><div class="badge">No prior experience required</div></div>
-              <div class="stat"><div class="k">Certificate</div><div class="badge">Upon successful completion</div></div>
-            </div>
-          </div>
-          <div>
-            <div class="card" style="height:100%">
-              <h3>Highlights</h3>
-              <ul class="list">
-                <li>Industry-modeled daily routine (theory + practical)</li>
-                <li>Dedicated motorcycle servicing sessions (early weeks)</li>
-                <li>Hands-on labs & diagnostic practice</li>
-                <li>Intro to Hybrid/EV systems & safety</li>
-                <li>Instructor guidance, assessments, and job readiness</li>
-              </ul>
-              <div class="kpis" style="margin-top:.7rem">
-                <div class="kpi"><div class="num">7</div><div class="muted">Sessions/Day</div></div>
-                <div class="kpi"><div class="num">6</div><div class="muted">Days/Week</div></div>
-                <div class="kpi"><div class="num">1</div><div class="muted">Weekly Review</div></div>
-                <div class="kpi"><div class="num">∞</div><div class="muted">Learning Support</div></div>
-              </div>
-            </div>
-          </div>
-        </div><!-- /hero-grid -->
-      </div>
+  <main>
+    <div class="lead">
+      <h1>Pre-Admission Resources</h1>
+      <p class="muted">Use this page to prepare for the Professional Automotive Technician Training. It contains a complete glossary (English + বাংলা), short Q&A, and MCQs for quick self-check.</p>
+      <p class="search-tip"><strong>Tip:</strong> Press <kbd>Ctrl</kbd> + <kbd>F</kbd> (or <kbd>⌘</kbd> + <kbd>F</kbd>) and type a term (e.g., “ECU”, “ABS”, “Coolant”) to jump to it.</p>
     </div>
-  </section>
 
-  <!-- ========== Eligibility & Requirements ========== -->
-  <section>
-    <div class="container grid-2">
-      <div class="card">
-        <h2>Eligibility</h2>
-        <ul class="list">
-          <li>Age 16+; basic literacy in Bangla or English</li>
-          <li>Motivation to learn hands-on technical skills</li>
-          <li>Ability to attend 6 days per week (Sat–Thu)</li>
-          <li>Basic health fitness for workshop activities</li>
+    <!-- GLOSSARY -->
+    <section>
+      <h2>Glossary (Full)</h2>
+      <div class="note">English definition first, with concise Bangla support in parentheses.</div>
+      <div class="cols">
+        <ul>
+          <li><strong>ABS (Anti-lock Braking System):</strong> Prevents wheel lock during hard braking. <em>(হঠাৎ ব্রেকে চাকা লক হওয়া রোধ)</em></li>
+          <li><strong>AC Compressor:</strong> Pressurizes refrigerant for the A/C system. <em>(এসি রেফ্রিজারেন্ট চাপ দেয়)</em></li>
+          <li><strong>Air Filter:</strong> Removes dust/debris from intake air before entering the engine. <em>(ইঞ্জিনে যাওয়ার আগে বাতাস পরিষ্কার)</em></li>
+          <li><strong>Alternator:</strong> Generates electricity to charge battery and power electronics. <em>(ব্যাটারি চার্জ ও বিদ্যুৎ সরবরাহ)</em></li>
+          <li><strong>Automatic Transmission:</strong> Gearbox that shifts gears automatically. <em>(স্বয়ংক্রিয় গিয়ার পরিবর্তন)</em></li>
+          <li><strong>Axle:</strong> Supports vehicle weight and transfers torque to wheels. <em>(ওজন বহন ও টর্ক সরবরাহ)</em></li>
+          <li><strong>Battery:</strong> Stores electrical energy for starting and accessories. <em>(ইঞ্জিন স্টার্ট ও ডিভাইস চালায়)</em></li>
+          <li><strong>Brake Disc (Rotor):</strong> Rotating disc clamped by pads to slow wheels. <em>(ডিস্কে প্যাড চাপ দিয়ে ব্রেক)</em></li>
+          <li><strong>Brake Drum:</strong> Drum-type brake surface used with shoes. <em>(ড্রাম-শু ব্রেক ব্যবস্থা)</em></li>
+          <li><strong>Brake Fluid:</strong> Hydraulic fluid transmitting pedal force. <em>(হাইড্রোলিক তরল)</em></li>
+          <li><strong>Brake Pad/Shoe:</strong> Friction material that creates braking force. <em>(ঘর্ষণ প্যাড/শু)</em></li>
+          <li><strong>Bush/ Bushing:</strong> Rubber/metal sleeve reducing vibration/wear at joints. <em>(জয়েন্টে কম্পন/ঘর্ষণ কমায়)</em></li>
+          <li><strong>Camshaft:</strong> Opens/closes valves in timed sequence. <em>(ভালভ খোলা-বন্ধ নিয়ন্ত্রণ)</em></li>
+          <li><strong>Canister (Charcoal):</strong> Stores fuel vapors for emission control (EVAP). <em>(জ্বালানি বাষ্প ধরে রাখে)</em></li>
+          <li><strong>Carburetor:</strong> Mixes air and fuel in older engines. <em>(পুরাতন ইঞ্জিনে এয়ার-ফুয়েল মিশ্রণ)</em></li>
+          <li><strong>Catalytic Converter:</strong> Converts harmful exhaust gases to less harmful. <em>(ক্ষতিকর গ্যাস কম ক্ষতিকর করে)</em></li>
+          <li><strong>Chassis:</strong> Main structural frame of the vehicle. <em>(গাড়ির মূল ফ্রেম)</em></li>
+          <li><strong>CI Engine (Compression Ignition):</strong> Diesel-type engine igniting from compression heat. <em>(ডিজেল ইঞ্জিন)</em></li>
+          <li><strong>Clutch:</strong> Connects/disconnects engine power to gearbox. <em>(ইঞ্জিন-গিয়ারবক্স সংযোগ নিয়ন্ত্রণ)</em></li>
+          <li><strong>Coil Spring:</strong> Suspension spring supporting weight. <em>(সাসপেনশনের স্প্রিং)</em></li>
+          <li><strong>Coolant:</strong> Heat-absorbing fluid preventing overheating/freezing. <em>(ইঞ্জিন ঠান্ডা রাখে)</em></li>
+          <li><strong>Crankshaft:</strong> Converts piston motion into rotation. <em>(পিস্টনের চলনকে ঘূর্ণনে রূপান্তর)</em></li>
+          <li><strong>Cruise Control:</strong> Maintains set speed automatically. <em>(স্বয়ংক্রিয় গতিনিয়ন্ত্রণ)</em></li>
+          <li><strong>CV Joint (Constant Velocity):</strong> Joint enabling smooth power delivery at angles. <em>(কোণে শক্তি সরবরাহ মসৃণ)</em></li>
+          <li><strong>Cylinder:</strong> Chamber where combustion occurs. <em>(দহন কক্ষ)</em></li>
+          <li><strong>Damper (Shock Absorber):</strong> Controls suspension oscillations. <em>(ঝাঁকুনি শোষণ)</em></li>
+          <li><strong>Differential:</strong> Lets wheels rotate at different speeds while turning. <em>(টার্নে ভিন্ন গতি দেয়)</em></li>
+          <li><strong>Dipstick:</strong> Oil level measuring rod. <em>(ইঞ্জিন তেল মাপার দন্ড)</em></li>
+          <li><strong>Disc Brake:</strong> Caliper squeezes pads onto disc to stop motion. <em>(ডিস্ক-প্যাড ব্রেক)</em></li>
+          <li><strong>DOHC:</strong> Dual overhead camshafts operating valves. <em>(ডাবল ওভারহেড ক্যাম)</em></li>
+          <li><strong>Drive Belt/Serpentine Belt:</strong> Drives alternator, pump(s), etc. <em>(বেল্টে এক্সেসরি চালায়)</em></li>
+          <li><strong>Driveshaft/Propeller Shaft:</strong> Transfers torque from transmission/diff. <em>(টর্ক স্থানান্তর শ্যাফ্ট)</em></li>
+          <li><strong>ECU (Engine/Electronic Control Unit):</strong> Controls engine/electronic functions. <em>(ইঞ্জিন/ইলেকট্রনিক নিয়ন্ত্রক)</em></li>
+          <li><strong>EGR Valve:</strong> Recirculates exhaust gas to reduce NOx. <em>(নক্স কমাতে এক্সহস্ট পুনঃপ্রবাহ)</em></li>
+          <li><strong>EFI (Electronic Fuel Injection):</strong> Electronically metered fuel delivery. <em>(ইলেকট্রনিক ফুয়েল ইনজেকশন)</em></li>
+          <li><strong>Exhaust Manifold:</strong> Collects exhaust gases from cylinders. <em>(এক্সহস্ট গ্যাস সংগ্রহ)</em></li>
+          <li><strong>Fan Belt:</strong> Belt that drives cooling fan or accessories. <em>(ফ্যান/এক্সেসরি চালায়)</em></li>
+          <li><strong>Fuel Filter:</strong> Removes contaminants from fuel. <em>(জ্বালানি পরিশোধন)</em></li>
+          <li><strong>Fuel Injector:</strong> Sprays atomized fuel into intake/combustion. <em>(ফুয়েল ছিটিয়ে দেয়)</em></li>
+          <li><strong>Fuel Pump:</strong> Moves fuel from tank to engine. <em>(ট্যাংক থেকে ইঞ্জিনে জ্বালানি পাঠায়)</em></li>
+          <li><strong>Fuse:</strong> Safety link that opens on overcurrent. <em>(অতিরিক্ত কারেন্টে সার্কিট বিচ্ছিন্ন)</em></li>
+          <li><strong>Gasket:</strong> Seal preventing leaks between mating surfaces. <em>(ফাঁক বন্ধ করে লিক রোধ)</em></li>
+          <li><strong>Gearbox/Transmission:</strong> Gear set controlling speed/torque. <em>(গতি ও টর্ক নিয়ন্ত্রণ)</em></li>
+          <li><strong>Ground Clearance:</strong> Distance from ground to lowest point. <em>(মাটি থেকে ন্যূনতম উচ্চতা)</em></li>
+          <li><strong>Handbrake/Parking Brake:</strong> Holds vehicle stationary. <em>(গাড়ি থামিয়ে রাখা ব্রেক)</em></li>
+          <li><strong>Head Gasket:</strong> Seals cylinder head to block. <em>(হেড-ব্লকের সিল)</em></li>
+          <li><strong>Horsepower (HP):</strong> Measure of engine power. <em>(শক্তির একক)</em></li>
+          <li><strong>Hybrid Vehicle:</strong> Combines engine + electric motor propulsion. <em>(জ্বালানি+বিদ্যুৎ চালিত)</em></li>
+          <li><strong>Ignition Coil:</strong> Steps up voltage for spark plugs. <em>(স্পার্কের জন্য উচ্চ ভোল্টেজ)</em></li>
+          <li><strong>Ignition Switch:</strong> Controls ignition/electrics on/off. <em>(ইগনিশন চালু/বন্ধ)</em></li>
+          <li><strong>Intake Manifold:</strong> Distributes air to cylinders. <em>(সিলিন্ডারে বাতাস বিতরণ)</em></li>
+          <li><strong>Jack:</strong> Device to lift the vehicle. <em>(গাড়ি তোলার যন্ত্র)</em></li>
+          <li><strong>Knock Sensor:</strong> Detects detonation; signals ECU to adjust timing. <em>(নকিং শনাক্ত)</em></li>
+          <li><strong>Lambda (O₂) Sensor:</strong> Measures oxygen in exhaust for mixture control. <em>(এক্সহস্টে অক্সিজেন মাপে)</em></li>
+          <li><strong>Leaf Spring:</strong> Multi-layer spring used in suspension. <em>(পাতা স্প্রিং)</em></li>
+          <li><strong>LPG/CNG System:</strong> Alternative gaseous fuels and components. <em>(বিকল্প গ্যাসীয় জ্বালানি)</em></li>
+          <li><strong>Manual Transmission:</strong> Driver-operated gear shifting with clutch. <em>(হস্তচালিত গিয়ার)</em></li>
+          <li><strong>MAP Sensor:</strong> Manifold absolute pressure sensor. <em>(ম্যানিফোল্ড চাপ মাপার সেন্সর)</em></li>
+          <li><strong>MAF Sensor:</strong> Mass airflow sensor for incoming air. <em>(বাতাস প্রবাহ মাপার সেন্সর)</em></li>
+          <li><strong>Monocoque:</strong> Body structure bearing load without separate frame. <em>(ফ্রেমবিহীন বডি স্ট্রাকচার)</em></li>
+          <li><strong>Motor Oil (Engine Oil):</strong> Lubricates and cools engine parts. <em>(ইঞ্জিনে লুব্রিকেশন)</em></li>
+          <li><strong>Muffler/Silencer:</strong> Reduces exhaust noise. <em>(শব্দ কমায়)</em></li>
+          <li><strong>Overheating:</strong> Excess engine temperature due to cooling issues. <em>(ইঞ্জিন অতিরিক্ত গরম)</em></li>
+          <li><strong>PCV Valve:</strong> Positive crankcase ventilation control. <em>(ক্র্যাঙ্ককেস বায়ু চলাচল)</em></li>
+          <li><strong>Piston:</strong> Moves up/down in cylinder to produce power. <em>(পিস্টনের গতি থেকে শক্তি)</em></li>
+          <li><strong>Power Steering:</strong> Assisted steering reducing effort. <em>(স্টিয়ারিং সহজ করে)</em></li>
+          <li><strong>Radiator:</strong> Heat exchanger that cools coolant. <em>(কুল্যান্ট ঠান্ডা করে)</em></li>
+          <li><strong>Rim:</strong> Metal hoop holding the tire. <em>(টায়ারের ধাতব রিং)</em></li>
+          <li><strong>Shock Absorber:</strong> See Damper; controls bounce. <em>(ঝাঁকুনি নিয়ন্ত্রণ)</em></li>
+          <li><strong>Spark Plug:</strong> Creates spark to ignite mixture (SI engines). <em>(স্পার্ক তৈরি করে)</em></li>
+          <li><strong>Starter Motor:</strong> Cranks engine to start. <em>(ইঞ্জিন স্টার্ট করে)</em></li>
+          <li><strong>Steering Rack/Box:</strong> Mechanism turning wheels by steering input. <em>(চাকা ঘোরানোর ব্যবস্থা)</em></li>
+          <li><strong>Strut:</strong> Suspension unit combining spring and damper. <em>(স্প্রিং+ড্যাম্পার ইউনিট)</em></li>
+          <li><strong>Suspension:</strong> System supporting body and absorbing road shocks. <em>(সাসপেনশন সিস্টেম)</em></li>
+          <li><strong>Thermostat:</strong> Controls coolant flow based on temperature. <em>(তাপমাত্রা নিয়ন্ত্রিত ভালভ)</em></li>
+          <li><strong>Throttle Body:</strong> Controls airflow into engine. <em>(ইনটেকে বায়ু নিয়ন্ত্রণ)</em></li>
+          <li><strong>Tie Rod:</strong> Links steering rack to wheel hub. <em>(স্টিয়ারিং লিঙ্কেজ)</em></li>
+          <li><strong>Torque:</strong> Rotational force from engine/drivetrain. <em>(ঘূর্ণনশক্তি)</em></li>
+          <li><strong>Turbocharger:</strong> Exhaust-driven compressor increasing intake pressure. <em>(টার্বো বুস্ট)</em></li>
+          <li><strong>Tyre (Tire):</strong> Rubber covering providing traction and cushioning. <em>(রাবার টায়ার)</em></li>
+          <li><strong>V-belt:</strong> Trapezoid belt for accessory drives. <em>(ভি-বেল্ট)</em></li>
+          <li><strong>VIN:</strong> Vehicle Identification Number. <em>(গাড়ির একক শনাক্তকরণ)</em></li>
+          <li><strong>Water Pump:</strong> Circulates coolant through engine/radiator. <em>(কুল্যান্ট প্রবাহ)</em></li>
+          <li><strong>Wheel Alignment:</strong> Adjusts wheel angles to spec. <em>(চাকার সমন্বয়)</em></li>
+          <li><strong>Wheel Balancing:</strong> Distributes weight evenly around wheel. <em>(ওজন ভারসাম্য)</em></li>
+          <li><strong>Wheel Bearing:</strong> Bearing allowing smooth wheel rotation. <em>(চাকা বিয়ারিং)</em></li>
+          <li><strong>Windscreen Washer/ Wiper:</strong> Cleans windshield for visibility. <em>(গ্লাস পরিষ্কার ব্যবস্থা)</em></li>
+          <!-- Add more specific motorcycle items if desired -->
+          <li><strong>Kick Starter (Motorcycle):</strong> Manual lever to start engine. <em>(কিক দিয়ে স্টার্ট)</em></li>
+          <li><strong>Clutch Plate (Motorcycle):</strong> Friction disc in bike clutch pack. <em>(ক্লাচ প্লেট)</em></li>
+          <li><strong>Carb Jet (Motorcycle):</strong> Calibrated orifice controlling fuel. <em>(কার্ব জেট)</em></li>
+          <li><strong>CDI Unit (Motorcycle):</strong> Capacitor discharge ignition module. <em>(সিডিআই ইগনিশন)</em></li>
         </ul>
       </div>
-      <div class="card">
-        <h2>What You’ll Need</h2>
-        <ul class="list">
-          <li>National ID / Student ID (for registration)</li>
-          <li>Two passport-size photos</li>
-          <li>Notebook & pen; closed-toe shoes for lab</li>
-          <li>Optional: personal safety glasses / gloves</li>
+    </section>
+
+    <!-- SHORT Q&A -->
+    <section>
+      <h2>Short Questions & Answers</h2>
+      <details open>
+        <summary>Basics</summary>
+        <ul>
+          <li><strong>Q:</strong> Primary function of an internal combustion engine? <br><strong>A:</strong> Convert fuel energy into mechanical power. <em>(বাংলা: জ্বালানি শক্তিকে যান্ত্রিক শক্তিতে রূপান্তর)</em></li>
+          <li><strong>Q:</strong> Tool to tighten/loosen bolts? <br><strong>A:</strong> Wrench/Spanner. <em>(রেঞ্চ/স্প্যানার)</em></li>
+          <li><strong>Q:</strong> What does the alternator do? <br><strong>A:</strong> Charges battery and powers electrics while running. <em>(ব্যাটারি চার্জ)</em></li>
+          <li><strong>Q:</strong> Function of the radiator? <br><strong>A:</strong> Cools the coolant to remove engine heat. <em>(কুল্যান্ট ঠান্ডা)</em></li>
+          <li><strong>Q:</strong> Why use engine oil? <br><strong>A:</strong> Lubrication, cooling, cleaning, sealing, and corrosion protection. <em>(লুব্রিকেশন ও সুরক্ষা)</em></li>
         </ul>
-      </div>
-    </div>
-  </section>
+      </details>
+      <details>
+        <summary>Electrical & Sensors</summary>
+        <ul>
+          <li><strong>Q:</strong> Purpose of the O₂ sensor? <br><strong>A:</strong> Measures oxygen in exhaust for correct air-fuel ratio. <em>(মিশ্রণ নিয়ন্ত্রণ)</em></li>
+          <li><strong>Q:</strong> MAP vs MAF sensor? <br><strong>A:</strong> MAP measures manifold pressure; MAF measures incoming airflow mass. <em>(চাপ বনাম বায়ু প্রবাহ)</em></li>
+          <li><strong>Q:</strong> Battery voltage (engine off/idle)? <br><strong>A:</strong> ~12.4-12.7V off; ~13.8-14.4V while charging. <em>(ভোল্টেজ মান)</em></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Brakes, Suspension & Tyres</summary>
+        <ul>
+          <li><strong>Q:</strong> Signs of worn brake pads? <br><strong>A:</strong> Squeal, longer stopping distance, thin pad material. <em>(চিহ্ন)</em></li>
+          <li><strong>Q:</strong> Why wheel alignment? <br><strong>A:</strong> Prevents uneven wear and pulling, improves handling. <em>(সমান পরিধান ও নিয়ন্ত্রণ)</em></li>
+          <li><strong>Q:</strong> Correct tyre pressure effect? <br><strong>A:</strong> Better safety, economy, and tread life. <em>(নিরাপত্তা ও সাশ্রয়)</em></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Motorcycle Focus</summary>
+        <ul>
+          <li><strong>Q:</strong> Symptoms of clogged carburetor jet? <br><strong>A:</strong> Poor idling, hesitation, stalling. <em>(কার্ব জেট ব্লক লক্ষণ)</em></li>
+          <li><strong>Q:</strong> Role of CDI unit? <br><strong>A:</strong> Controls spark timing/energy in many bikes. <em>(ইগনিশন নিয়ন্ত্রণ)</em></li>
+        </ul>
+      </details>
+    </section>
 
-  <!-- ========== Fees & Scholarships ========== -->
-  <section>
-    <div class="container">
-      <div class="card">
-        <h2>Fees & Scholarships</h2>
-        <p class="meta">Transparent and accessible. Update amounts to your official rates.</p>
-        <div class="grid-2">
-          <div>
-            <table class="table" aria-describedby="fees-table">
-              <thead><tr><th>Item</th><th>Amount (BDT)</th></tr></thead>
-              <tbody>
-                <tr><td>Admission Fee</td><td>— <!-- TODO: Fill amount --></td></tr>
-                <tr><td>Tuition (12 weeks)</td><td>— <!-- TODO: Fill amount --></td></tr>
-                <tr><td>Lab/Materials</td><td>— <!-- TODO: Fill amount --></td></tr>
-                <tr><td><strong>Total</strong></td><td><strong>—</strong></td></tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="accent">
-            <p><strong>Scholarships:</strong> Need-based assistance available for eligible learners. Upload supporting documents with your application. Limited seats.</p>
-            <p><strong>Installments:</strong> Flexible installment plan on request.</p>
-            <p><strong>Refunds:</strong> Refer to institute policy (within first week of classes).</p>
-            <a class="btn" href="https://forms.gle/REPLACE_WITH_YOUR_FORM">Apply with Scholarship Request</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- MCQs -->
+    <section>
+      <h2>MCQs — Practice</h2>
+      <div class="note"><span class="tag">How to use</span> Try answering first; check the answer shown after the dash.</div>
+      <ul>
+        <li>1) ECU stands for — <strong>Engine Control Unit</strong>. <em>(ইঞ্জিন কন্ট্রোল ইউনিট)</em></li>
+        <li>2) Which component stores electrical energy? — <strong>Battery</strong>. <em>(ব্যাটারি)</em></li>
+        <li>3) Which tool lifts a vehicle? — <strong>Jack</strong>. <em>(জ্যাক)</em></li>
+        <li>4) The device that reduces exhaust noise is — <strong>Muffler</strong>. <em>(সাইলেন্সার)</em></li>
+        <li>5) Function of the radiator — <strong>Cool the coolant</strong>. <em>(কুল্যান্ট ঠান্ডা)</em></li>
+        <li>6) ABS helps by — <strong>Preventing wheel lock</strong>. <em>(চাকা লক রোধ)</em></li>
+        <li>7) MAP sensor measures — <strong>Manifold absolute pressure</strong>. <em>(চাপ)</em></li>
+        <li>8) Spark plug is used in — <strong>SI (petrol) engines</strong>. <em>(পেট্রল ইঞ্জিন)</em></li>
+        <li>9) Diesel engine ignition type — <strong>Compression ignition</strong>. <em>(কম্প্রেশন)</em></li>
+        <li>10) Thermostat primarily — <strong>Controls coolant flow by temp</strong>. <em>(তাপমাত্রা অনুযায়ী নিয়ন্ত্রণ)</em></li>
+        <li>11) O₂ sensor adjusts — <strong>Air-fuel mixture/closed-loop</strong>. <em>(মিশ্রণ নিয়ন্ত্রণ)</em></li>
+        <li>12) Wheel alignment corrects — <strong>Camber/Caster/Toe</strong>. <em>(চাকার কোণ)</em></li>
+        <li>13) Timing of valve operation set by — <strong>Camshaft</strong>. <em>(ক্যামশাফ্ট)</em></li>
+        <li>14) Shock absorber purpose — <strong>Control bounce/oscillation</strong>. <em>(ঝাঁকুনি নিয়ন্ত্রণ)</em></li>
+        <li>15) Fuel is pumped from tank by — <strong>Fuel pump</strong>. <em>(ফুয়েল পাম্প)</em></li>
+      </ul>
+    </section>
+  </main>
 
-  <!-- ========== Application Timeline ========== -->
-  <section>
-    <div class="container">
-      <div class="card">
-        <h2>Application Timeline</h2>
-        <div class="timeline" role="list">
-          <div class="step" role="listitem">
-            <div class="t">Apply</div>
-            <div>Submit online form (documents + application fee slip if applicable).</div>
-          </div>
-          <div class="step" role="listitem">
-            <div class="t">Screening</div>
-            <div>Basic eligibility check & a short counselling call (if needed).</div>
-          </div>
-          <div class="step" role="listitem">
-            <div class="t">Confirmation</div>
-            <div>Receive provisional offer; complete fee payment to lock your seat.</div>
-          </div>
-          <div class="step" role="listitem">
-            <div class="t">Orientation</div>
-            <div>Attend orientation before classes start (safety, tools, etiquette).</div>
-          </div>
-        </div>
-        <div style="margin-top:1rem">
-          <a class="btn" href="https://forms.gle/REPLACE_WITH_YOUR_FORM">Start Application</a>
-          <a class="btn ghost" href="../class-routine.html">View Class Routine</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Curriculum Snapshot ========== -->
-  <section>
-    <div class="container">
-      <div class="cards">
-        <div class="card">
-          <h3>Foundation</h3>
-          <p class="meta">Week 1–2</p>
-          <ul class="list">
-            <li>Safety, workshop rules, tools & measurements</li>
-            <li>Motorcycle servicing: engine, clutch, start system</li>
-            <li>Pre-admission essentials & basic theory</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Systems & Diagnostics</h3>
-          <p class="meta">Week 3–8</p>
-          <ul class="list">
-            <li>Engine, transmission, brakes, suspension, electrical</li>
-            <li>OBD basics, fault finding, service procedures</li>
-            <li>Customer communication & documentation</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Advanced & Readiness</h3>
-          <p class="meta">Week 9–12</p>
-          <ul class="list">
-            <li>Intro to Hybrid/EV safety & systems</li>
-            <li>Assessments, mock tests, job readiness</li>
-            <li>Final exam & certification</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Pre-Admission Resources (Compact) ========== -->
-  <section>
-    <div class="container">
-      <div class="grid-2">
-        <div class="card">
-          <h2>Glossary (Sample)</h2>
-          <ul class="list">
-            <li><strong>ABS:</strong> Anti-lock Braking System — prevents wheel lock during hard braking. <em>(বাংলা: হঠাৎ ব্রেক করলে চাকা লক হওয়া রোধ করে)</em></li>
-            <li><strong>Alternator:</strong> Generates electricity to recharge the battery & power electronics. <em>(ব্যাটারি চার্জ করে)</em></li>
-            <li><strong>EFI:</strong> Electronic Fuel Injection — electronically controlled fuel delivery. <em>(বৈদ্যুতিক নিয়ন্ত্রণে জ্বালানি ইনজেকশন)</em></li>
-            <li><strong>ECU:</strong> Electronic Control Unit — manages engine/electrical functions. <em>(ইঞ্জিন ও ইলেকট্রিক নিয়ন্ত্রণ)</em></li>
-          </ul>
-          <p class="muted">For the full list, visit <a href="../automotive-course/pre-admission.html">Pre-Admission page</a>.</p>
-        </div>
-        <div class="card">
-          <h2>Short Q&A (Sample)</h2>
-          <ul class="list">
-            <li><strong>Q:</strong> Primary function of an internal combustion engine?<br><strong>A:</strong> Convert fuel energy into mechanical power. <em>(বাংলা: জ্বালানি শক্তি → যান্ত্রিক শক্তি)</em></li>
-            <li><strong>Q:</strong> Tool to loosen/tighten bolts?<br><strong>A:</strong> Wrench/Spanner. <em>(বাংলা: রেঞ্চ/স্প্যানার)</em></li>
-          </ul>
-          <p class="muted">More practice MCQs & Q&A on the <a href="../automotive-course/pre-admission.html">Pre-Admission page</a>.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FAQs ========== -->
-  <section>
-    <div class="container">
-      <div class="card">
-        <h2>FAQ</h2>
-        <div class="faq">
-          <details>
-            <summary>Do I need prior experience?</summary>
-            <p>No. The program starts from fundamentals and builds up to diagnostic practice.</p>
-          </details>
-          <details>
-            <summary>What is the weekly routine?</summary>
-            <p>Six days/week (Sat–Thu), 7 sessions/day: 3 theory and 4 practical. See the class routine for timing.</p>
-          </details>
-          <details>
-            <summary>Is there a certificate?</summary>
-            <p>Yes, upon successful completion of assessments and final exam.</p>
-          </details>
-          <details>
-            <summary>Can I pay in installments?</summary>
-            <p>Yes. Limited installment plans are available. See “Fees & Scholarships”.</p>
-          </details>
-          <details>
-            <summary>Is placement support available?</summary>
-            <p>We provide guidance on job readiness, documentation, and interview prep. Local placement support where available.</p>
-          </details>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Contact ========== -->
-  <section>
-    <div class="container">
-      <div class="card">
-        <h2>Contact & Help</h2>
-        <p class="meta">Have questions about eligibility, fees, or forms? Reach us:</p>
-        <div class="grid-2">
-          <div>
-            <ul class="list">
-              <li><strong>Email:</strong> info@assunnah.edu.bd <!-- TODO: replace --></li>
-              <li><strong>Phone/WhatsApp:</strong> +8801XXXXXXXXX <!-- TODO: replace --></li>
-              <li><strong>Address:</strong> Dhaka, Bangladesh</li>
-            </ul>
-          </div>
-          <div>
-            <p>Ready to begin?</p>
-            <a class="btn" href="https://forms.gle/REPLACE_WITH_YOUR_FORM">Apply Now</a>
-            <a class="btn ghost" href="../about.html">About the Institute</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Footer ========== -->
   <footer>
-    <div class="container foot">
-      <div>&copy; <span id="y"></span> As Sunnah Skill Development Institute. All rights reserved.</div>
-      <div class="muted">Made with care for learners in Bangladesh.</div>
-    </div>
+    © <span id="y"></span> As Sunnah Skill Development Institute • Admission Resource
   </footer>
 
-  <!-- ========== Small Helpers ========== -->
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>

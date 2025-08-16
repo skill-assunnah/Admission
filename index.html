@@ -4,102 +4,51 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Automobile | Admission Resource</title>
-  <meta name="description" content="Pre-admission resources for the Professional Automotive Technician Training Program. Full glossary, short Q&A, and MCQs." />
+  <meta name="description" content="Pre-admission resources for the Professional Automotive Technician Training Program. Full glossary with live search, Short Q&A, and MCQs." />
   <style>
-    :root {
-      --bg: #ffffff;
-      --text: #1e293b;
-      --muted: #475569;
-      --brand: #0ea5e9;
-      --border: #e2e8f0;
-      --card: #f8fafc;
-      --radius: 12px;
-      --shadow: 0 6px 20px rgba(2, 8, 23, .06);
+    :root{
+      --bg:#ffffff; --text:#1e293b; --muted:#475569; --brand:#0ea5e9; --border:#e2e8f0; --card:#f8fafc;
+      --radius:12px; --shadow:0 6px 20px rgba(2,8,23,.06);
     }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0b1220;
-        --text: #e2e8f0;
-        --muted: #94a3b8;
-        --brand: #38bdf8;
-        --border: #1f2937;
-        --card: #111827;
-        --shadow: 0 10px 28px rgba(0,0,0,.45);
-      }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b1220; --text:#e2e8f0; --muted:#94a3b8; --brand:#38bdf8; --border:#1f2937; --card:#111827; --shadow:0 10px 28px rgba(0,0,0,.45);}
     }
-    * { box-sizing: border-box }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
     /* Header */
-    header {
-      position: sticky; top: 0; z-index: 10;
-      background: var(--card);
-      border-bottom: 1px solid var(--border);
-      padding: .9rem 1rem;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .logo { margin: 0; font-size: 1.2rem; font-weight: 800; color: var(--brand) }
-    nav a {
-      margin-left: 1rem; color: var(--muted); text-decoration: none; font-weight: 600;
-    }
-    nav a:hover { color: var(--brand) }
+    header{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--border);padding:.9rem 1rem;display:flex;align-items:center;justify-content:space-between}
+    .logo{margin:0;font-size:1.2rem;font-weight:800;color:var(--brand)}
+    nav a{margin-left:1rem;text-decoration:none;color:var(--muted);font-weight:600}
+    nav a:hover{color:var(--brand)}
     /* Main */
-    main { max-width: 980px; margin: 0 auto; padding: 1.2rem 1rem 2.5rem }
-    .lead {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.2rem 1.2rem;
-      box-shadow: var(--shadow);
-      margin: 1rem 0 1.2rem;
-    }
-    h1 { font-size: clamp(1.3rem, 1.2rem + .8vw, 1.8rem); margin: .4rem 0 .6rem }
-    h2 { color: var(--brand); margin: 0 0 .8rem; font-size: 1.25rem }
-    section {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 1.2rem;
-      margin: 1rem 0;
-    }
-    details {
-      background: transparent;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: .8rem 1rem;
-      margin: .6rem 0;
-    }
-    summary { cursor: pointer; font-weight: 700 }
-    .muted { color: var(--muted) }
-    .note {
-      border-left: 4px solid var(--brand);
-      padding-left: .8rem; margin: .6rem 0;
-      color: var(--muted);
-    }
-    /* Lists */
-    ul { padding-left: 1.15rem; margin: .4rem 0 }
-    li { margin: .28rem 0 }
-    /* Two column helper (collapsible content stays fluid) */
-    .cols { columns: 2; column-gap: 1.2rem }
-    .cols > * { break-inside: avoid }
-    @media (max-width: 900px) { .cols { columns: 1 } }
+    main{max-width:980px;margin:0 auto;padding:1.2rem 1rem 2.5rem}
+    .lead{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;box-shadow:var(--shadow);margin:1rem 0 1.2rem}
+    h1{font-size:clamp(1.3rem,1.2rem + .8vw,1.8rem);margin:.4rem 0 .6rem}
+    h2{color:var(--brand);margin:.2rem 0 .8rem;font-size:1.25rem}
+    section{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.2rem;margin:1rem 0}
+    .muted{color:var(--muted)}
+    .note{border-left:4px solid var(--brand);padding-left:.8rem;margin:.6rem 0;color:var(--muted)}
+    /* Controls */
+    .controls{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0 1rem}
+    .input{flex:1;min-width:220px;border:1px solid var(--border);border-radius:999px;padding:.65rem .9rem;background:#fff}
+    @media (prefers-color-scheme: dark){ .input{background:#0f172a;color:var(--text)} }
+    .btn{border:1px solid var(--border);background:#fff;padding:.6rem .9rem;border-radius:999px;cursor:pointer;font-weight:600}
+    .btn:hover{border-color:var(--brand);color:var(--brand)}
+    @media (prefers-color-scheme: dark){ .btn{background:#0f172a;color:var(--text)} }
+    /* Glossary groups */
+    details.group{border:1px solid var(--border);border-radius:10px;padding:.6rem .9rem;background:transparent;margin:.55rem 0}
+    summary{cursor:pointer;font-weight:800}
+    .count{color:var(--muted);font-weight:600;margin-left:.4rem}
+    ul{padding-left:1.2rem;margin:.35rem 0}
+    li{margin:.28rem 0}
+    mark{background:transparent;color:inherit;border-bottom:2px solid var(--brand);padding-bottom:1px}
+    /* Quick in-page nav */
+    .subnav{display:flex;gap:.6rem;flex-wrap:wrap;margin:.6rem 0 0}
+    .chip{display:inline-block;border:1px solid var(--border);background:#fff;padding:.45rem .75rem;border-radius:999px;text-decoration:none;color:var(--muted);font-weight:700}
+    .chip:hover{border-color:var(--brand);color:var(--brand)}
+    @media (prefers-color-scheme: dark){ .chip{background:#0f172a;color:var(--text)} }
     /* Footer */
-    footer {
-      text-align: center; padding: 1rem; color: var(--muted);
-      border-top: 1px solid var(--border);
-      margin-top: 1.2rem;
-    }
-    /* Small helper styles */
-    .tag { display:inline-block; background:#e0f2fe20; color:var(--brand); border:1px solid var(--border); border-radius:999px; padding:.25rem .6rem; font-size:.85rem; font-weight:700 }
-    .search-tip {
-      font-size: .95rem; padding:.6rem .75rem; border:1px dashed var(--border); border-radius:10px; background: transparent;
-    }
+    footer{text-align:center;padding:1rem;color:var(--muted);border-top:1px solid var(--border);margin-top:1.2rem}
   </style>
 </head>
 <body>
@@ -108,161 +57,306 @@
     <nav aria-label="Primary">
       <a href="../index.html">Home</a>
       <a href="../course-outline.html">Course Overview</a>
-      <a href="#">Admission Resource</a>
+      <a aria-current="page" href="#">Admission Resource</a>
     </nav>
   </header>
 
   <main>
     <div class="lead">
       <h1>Pre-Admission Resources</h1>
-      <p class="muted">Use this page to prepare for the Professional Automotive Technician Training. It contains a complete glossary (English + বাংলা), short Q&A, and MCQs for quick self-check.</p>
-      <p class="search-tip"><strong>Tip:</strong> Press <kbd>Ctrl</kbd> + <kbd>F</kbd> (or <kbd>⌘</kbd> + <kbd>F</kbd>) and type a term (e.g., “ECU”, “ABS”, “Coolant”) to jump to it.</p>
+      <p class="muted">Prepare for the Professional Automotive Technician Training. Use the live search to find glossary terms quickly, then review Short Q&amp;A and MCQs.</p>
+      <div class="subnav" aria-label="In-page menu">
+        <a class="chip" href="#glossary">Glossary</a>
+        <a class="chip" href="#qa">Short Q&amp;A</a>
+        <a class="chip" href="#mcq">MCQs</a>
+      </div>
     </div>
 
-    <!-- GLOSSARY -->
-    <section>
-      <h2>Glossary (Full)</h2>
-      <div class="note">English definition first, with concise Bangla support in parentheses.</div>
-      <div class="cols">
-        <ul>
-          <li><strong>ABS (Anti-lock Braking System):</strong> Prevents wheel lock during hard braking. <em>(হঠাৎ ব্রেকে চাকা লক হওয়া রোধ)</em></li>
-          <li><strong>AC Compressor:</strong> Pressurizes refrigerant for the A/C system. <em>(এসি রেফ্রিজারেন্ট চাপ দেয়)</em></li>
-          <li><strong>Air Filter:</strong> Removes dust/debris from intake air before entering the engine. <em>(ইঞ্জিনে যাওয়ার আগে বাতাস পরিষ্কার)</em></li>
-          <li><strong>Alternator:</strong> Generates electricity to charge battery and power electronics. <em>(ব্যাটারি চার্জ ও বিদ্যুৎ সরবরাহ)</em></li>
-          <li><strong>Automatic Transmission:</strong> Gearbox that shifts gears automatically. <em>(স্বয়ংক্রিয় গিয়ার পরিবর্তন)</em></li>
-          <li><strong>Axle:</strong> Supports vehicle weight and transfers torque to wheels. <em>(ওজন বহন ও টর্ক সরবরাহ)</em></li>
-          <li><strong>Battery:</strong> Stores electrical energy for starting and accessories. <em>(ইঞ্জিন স্টার্ট ও ডিভাইস চালায়)</em></li>
-          <li><strong>Brake Disc (Rotor):</strong> Rotating disc clamped by pads to slow wheels. <em>(ডিস্কে প্যাড চাপ দিয়ে ব্রেক)</em></li>
-          <li><strong>Brake Drum:</strong> Drum-type brake surface used with shoes. <em>(ড্রাম-শু ব্রেক ব্যবস্থা)</em></li>
-          <li><strong>Brake Fluid:</strong> Hydraulic fluid transmitting pedal force. <em>(হাইড্রোলিক তরল)</em></li>
-          <li><strong>Brake Pad/Shoe:</strong> Friction material that creates braking force. <em>(ঘর্ষণ প্যাড/শু)</em></li>
-          <li><strong>Bush/ Bushing:</strong> Rubber/metal sleeve reducing vibration/wear at joints. <em>(জয়েন্টে কম্পন/ঘর্ষণ কমায়)</em></li>
-          <li><strong>Camshaft:</strong> Opens/closes valves in timed sequence. <em>(ভালভ খোলা-বন্ধ নিয়ন্ত্রণ)</em></li>
-          <li><strong>Canister (Charcoal):</strong> Stores fuel vapors for emission control (EVAP). <em>(জ্বালানি বাষ্প ধরে রাখে)</em></li>
-          <li><strong>Carburetor:</strong> Mixes air and fuel in older engines. <em>(পুরাতন ইঞ্জিনে এয়ার-ফুয়েল মিশ্রণ)</em></li>
-          <li><strong>Catalytic Converter:</strong> Converts harmful exhaust gases to less harmful. <em>(ক্ষতিকর গ্যাস কম ক্ষতিকর করে)</em></li>
-          <li><strong>Chassis:</strong> Main structural frame of the vehicle. <em>(গাড়ির মূল ফ্রেম)</em></li>
-          <li><strong>CI Engine (Compression Ignition):</strong> Diesel-type engine igniting from compression heat. <em>(ডিজেল ইঞ্জিন)</em></li>
-          <li><strong>Clutch:</strong> Connects/disconnects engine power to gearbox. <em>(ইঞ্জিন-গিয়ারবক্স সংযোগ নিয়ন্ত্রণ)</em></li>
-          <li><strong>Coil Spring:</strong> Suspension spring supporting weight. <em>(সাসপেনশনের স্প্রিং)</em></li>
-          <li><strong>Coolant:</strong> Heat-absorbing fluid preventing overheating/freezing. <em>(ইঞ্জিন ঠান্ডা রাখে)</em></li>
-          <li><strong>Crankshaft:</strong> Converts piston motion into rotation. <em>(পিস্টনের চলনকে ঘূর্ণনে রূপান্তর)</em></li>
-          <li><strong>Cruise Control:</strong> Maintains set speed automatically. <em>(স্বয়ংক্রিয় গতিনিয়ন্ত্রণ)</em></li>
-          <li><strong>CV Joint (Constant Velocity):</strong> Joint enabling smooth power delivery at angles. <em>(কোণে শক্তি সরবরাহ মসৃণ)</em></li>
-          <li><strong>Cylinder:</strong> Chamber where combustion occurs. <em>(দহন কক্ষ)</em></li>
-          <li><strong>Damper (Shock Absorber):</strong> Controls suspension oscillations. <em>(ঝাঁকুনি শোষণ)</em></li>
-          <li><strong>Differential:</strong> Lets wheels rotate at different speeds while turning. <em>(টার্নে ভিন্ন গতি দেয়)</em></li>
-          <li><strong>Dipstick:</strong> Oil level measuring rod. <em>(ইঞ্জিন তেল মাপার দন্ড)</em></li>
-          <li><strong>Disc Brake:</strong> Caliper squeezes pads onto disc to stop motion. <em>(ডিস্ক-প্যাড ব্রেক)</em></li>
-          <li><strong>DOHC:</strong> Dual overhead camshafts operating valves. <em>(ডাবল ওভারহেড ক্যাম)</em></li>
-          <li><strong>Drive Belt/Serpentine Belt:</strong> Drives alternator, pump(s), etc. <em>(বেল্টে এক্সেসরি চালায়)</em></li>
-          <li><strong>Driveshaft/Propeller Shaft:</strong> Transfers torque from transmission/diff. <em>(টর্ক স্থানান্তর শ্যাফ্ট)</em></li>
-          <li><strong>ECU (Engine/Electronic Control Unit):</strong> Controls engine/electronic functions. <em>(ইঞ্জিন/ইলেকট্রনিক নিয়ন্ত্রক)</em></li>
-          <li><strong>EGR Valve:</strong> Recirculates exhaust gas to reduce NOx. <em>(নক্স কমাতে এক্সহস্ট পুনঃপ্রবাহ)</em></li>
-          <li><strong>EFI (Electronic Fuel Injection):</strong> Electronically metered fuel delivery. <em>(ইলেকট্রনিক ফুয়েল ইনজেকশন)</em></li>
-          <li><strong>Exhaust Manifold:</strong> Collects exhaust gases from cylinders. <em>(এক্সহস্ট গ্যাস সংগ্রহ)</em></li>
-          <li><strong>Fan Belt:</strong> Belt that drives cooling fan or accessories. <em>(ফ্যান/এক্সেসরি চালায়)</em></li>
-          <li><strong>Fuel Filter:</strong> Removes contaminants from fuel. <em>(জ্বালানি পরিশোধন)</em></li>
-          <li><strong>Fuel Injector:</strong> Sprays atomized fuel into intake/combustion. <em>(ফুয়েল ছিটিয়ে দেয়)</em></li>
-          <li><strong>Fuel Pump:</strong> Moves fuel from tank to engine. <em>(ট্যাংক থেকে ইঞ্জিনে জ্বালানি পাঠায়)</em></li>
-          <li><strong>Fuse:</strong> Safety link that opens on overcurrent. <em>(অতিরিক্ত কারেন্টে সার্কিট বিচ্ছিন্ন)</em></li>
-          <li><strong>Gasket:</strong> Seal preventing leaks between mating surfaces. <em>(ফাঁক বন্ধ করে লিক রোধ)</em></li>
-          <li><strong>Gearbox/Transmission:</strong> Gear set controlling speed/torque. <em>(গতি ও টর্ক নিয়ন্ত্রণ)</em></li>
-          <li><strong>Ground Clearance:</strong> Distance from ground to lowest point. <em>(মাটি থেকে ন্যূনতম উচ্চতা)</em></li>
-          <li><strong>Handbrake/Parking Brake:</strong> Holds vehicle stationary. <em>(গাড়ি থামিয়ে রাখা ব্রেক)</em></li>
-          <li><strong>Head Gasket:</strong> Seals cylinder head to block. <em>(হেড-ব্লকের সিল)</em></li>
-          <li><strong>Horsepower (HP):</strong> Measure of engine power. <em>(শক্তির একক)</em></li>
-          <li><strong>Hybrid Vehicle:</strong> Combines engine + electric motor propulsion. <em>(জ্বালানি+বিদ্যুৎ চালিত)</em></li>
-          <li><strong>Ignition Coil:</strong> Steps up voltage for spark plugs. <em>(স্পার্কের জন্য উচ্চ ভোল্টেজ)</em></li>
-          <li><strong>Ignition Switch:</strong> Controls ignition/electrics on/off. <em>(ইগনিশন চালু/বন্ধ)</em></li>
-          <li><strong>Intake Manifold:</strong> Distributes air to cylinders. <em>(সিলিন্ডারে বাতাস বিতরণ)</em></li>
-          <li><strong>Jack:</strong> Device to lift the vehicle. <em>(গাড়ি তোলার যন্ত্র)</em></li>
-          <li><strong>Knock Sensor:</strong> Detects detonation; signals ECU to adjust timing. <em>(নকিং শনাক্ত)</em></li>
-          <li><strong>Lambda (O₂) Sensor:</strong> Measures oxygen in exhaust for mixture control. <em>(এক্সহস্টে অক্সিজেন মাপে)</em></li>
-          <li><strong>Leaf Spring:</strong> Multi-layer spring used in suspension. <em>(পাতা স্প্রিং)</em></li>
-          <li><strong>LPG/CNG System:</strong> Alternative gaseous fuels and components. <em>(বিকল্প গ্যাসীয় জ্বালানি)</em></li>
-          <li><strong>Manual Transmission:</strong> Driver-operated gear shifting with clutch. <em>(হস্তচালিত গিয়ার)</em></li>
-          <li><strong>MAP Sensor:</strong> Manifold absolute pressure sensor. <em>(ম্যানিফোল্ড চাপ মাপার সেন্সর)</em></li>
-          <li><strong>MAF Sensor:</strong> Mass airflow sensor for incoming air. <em>(বাতাস প্রবাহ মাপার সেন্সর)</em></li>
-          <li><strong>Monocoque:</strong> Body structure bearing load without separate frame. <em>(ফ্রেমবিহীন বডি স্ট্রাকচার)</em></li>
-          <li><strong>Motor Oil (Engine Oil):</strong> Lubricates and cools engine parts. <em>(ইঞ্জিনে লুব্রিকেশন)</em></li>
-          <li><strong>Muffler/Silencer:</strong> Reduces exhaust noise. <em>(শব্দ কমায়)</em></li>
-          <li><strong>Overheating:</strong> Excess engine temperature due to cooling issues. <em>(ইঞ্জিন অতিরিক্ত গরম)</em></li>
-          <li><strong>PCV Valve:</strong> Positive crankcase ventilation control. <em>(ক্র্যাঙ্ককেস বায়ু চলাচল)</em></li>
-          <li><strong>Piston:</strong> Moves up/down in cylinder to produce power. <em>(পিস্টনের গতি থেকে শক্তি)</em></li>
-          <li><strong>Power Steering:</strong> Assisted steering reducing effort. <em>(স্টিয়ারিং সহজ করে)</em></li>
-          <li><strong>Radiator:</strong> Heat exchanger that cools coolant. <em>(কুল্যান্ট ঠান্ডা করে)</em></li>
-          <li><strong>Rim:</strong> Metal hoop holding the tire. <em>(টায়ারের ধাতব রিং)</em></li>
-          <li><strong>Shock Absorber:</strong> See Damper; controls bounce. <em>(ঝাঁকুনি নিয়ন্ত্রণ)</em></li>
-          <li><strong>Spark Plug:</strong> Creates spark to ignite mixture (SI engines). <em>(স্পার্ক তৈরি করে)</em></li>
-          <li><strong>Starter Motor:</strong> Cranks engine to start. <em>(ইঞ্জিন স্টার্ট করে)</em></li>
-          <li><strong>Steering Rack/Box:</strong> Mechanism turning wheels by steering input. <em>(চাকা ঘোরানোর ব্যবস্থা)</em></li>
-          <li><strong>Strut:</strong> Suspension unit combining spring and damper. <em>(স্প্রিং+ড্যাম্পার ইউনিট)</em></li>
-          <li><strong>Suspension:</strong> System supporting body and absorbing road shocks. <em>(সাসপেনশন সিস্টেম)</em></li>
-          <li><strong>Thermostat:</strong> Controls coolant flow based on temperature. <em>(তাপমাত্রা নিয়ন্ত্রিত ভালভ)</em></li>
-          <li><strong>Throttle Body:</strong> Controls airflow into engine. <em>(ইনটেকে বায়ু নিয়ন্ত্রণ)</em></li>
-          <li><strong>Tie Rod:</strong> Links steering rack to wheel hub. <em>(স্টিয়ারিং লিঙ্কেজ)</em></li>
-          <li><strong>Torque:</strong> Rotational force from engine/drivetrain. <em>(ঘূর্ণনশক্তি)</em></li>
-          <li><strong>Turbocharger:</strong> Exhaust-driven compressor increasing intake pressure. <em>(টার্বো বুস্ট)</em></li>
-          <li><strong>Tyre (Tire):</strong> Rubber covering providing traction and cushioning. <em>(রাবার টায়ার)</em></li>
-          <li><strong>V-belt:</strong> Trapezoid belt for accessory drives. <em>(ভি-বেল্ট)</em></li>
-          <li><strong>VIN:</strong> Vehicle Identification Number. <em>(গাড়ির একক শনাক্তকরণ)</em></li>
-          <li><strong>Water Pump:</strong> Circulates coolant through engine/radiator. <em>(কুল্যান্ট প্রবাহ)</em></li>
-          <li><strong>Wheel Alignment:</strong> Adjusts wheel angles to spec. <em>(চাকার সমন্বয়)</em></li>
-          <li><strong>Wheel Balancing:</strong> Distributes weight evenly around wheel. <em>(ওজন ভারসাম্য)</em></li>
-          <li><strong>Wheel Bearing:</strong> Bearing allowing smooth wheel rotation. <em>(চাকা বিয়ারিং)</em></li>
-          <li><strong>Windscreen Washer/ Wiper:</strong> Cleans windshield for visibility. <em>(গ্লাস পরিষ্কার ব্যবস্থা)</em></li>
-          <!-- Add more specific motorcycle items if desired -->
-          <li><strong>Kick Starter (Motorcycle):</strong> Manual lever to start engine. <em>(কিক দিয়ে স্টার্ট)</em></li>
-          <li><strong>Clutch Plate (Motorcycle):</strong> Friction disc in bike clutch pack. <em>(ক্লাচ প্লেট)</em></li>
-          <li><strong>Carb Jet (Motorcycle):</strong> Calibrated orifice controlling fuel. <em>(কার্ব জেট)</em></li>
-          <li><strong>CDI Unit (Motorcycle):</strong> Capacitor discharge ignition module. <em>(সিডিআই ইগনিশন)</em></li>
-        </ul>
+    <!-- ===== GLOSSARY with Search & A–Z Groups ===== -->
+    <section id="glossary">
+      <h2>Glossary (A–Z)</h2>
+      <div class="controls" role="group" aria-label="Glossary controls">
+        <input id="search" class="input" type="search" placeholder="Search terms (e.g., ECU, ABS, Coolant, Carburetor)…" aria-label="Search glossary" />
+        <button class="btn" id="clear">Clear</button>
+        <button class="btn" id="openAll">Open all</button>
+        <button class="btn" id="closeAll">Close all</button>
+      </div>
+
+      <div id="groups">
+        <!-- A -->
+        <details class="group" data-letter="A" open>
+          <summary>A <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="ABS Anti-lock Braking System braking wheel lock"><strong>ABS (Anti-lock Braking System):</strong> Prevents wheel lock during hard braking. <em>(হঠাৎ ব্রেকে চাকা লক রোধ)</em></li>
+            <li class="term" data-term="AC compressor air conditioning refrigerant pressure"><strong>AC Compressor:</strong> Pressurizes refrigerant for the A/C system. <em>(এসি রেফ্রিজারেন্টে চাপ দেয়)</em></li>
+            <li class="term" data-term="Air Filter intake dust debris engine"><strong>Air Filter:</strong> Cleans intake air before it enters the engine. <em>(ইঞ্জিনে যাওয়ার আগে বাতাস পরিষ্কার)</em></li>
+            <li class="term" data-term="Alternator charge battery electrical power"><strong>Alternator:</strong> Generates electricity to charge the battery and power electronics. <em>(ব্যাটারি চার্জ ও বিদ্যুৎ সরবরাহ)</em></li>
+            <li class="term" data-term="Automatic Transmission gearbox auto shift"><strong>Automatic Transmission:</strong> Gearbox that shifts gears automatically. <em>(স্বয়ংক্রিয় গিয়ার পরিবর্তন)</em></li>
+          </ul>
+        </details>
+
+        <!-- B -->
+        <details class="group" data-letter="B">
+          <summary>B <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Battery electrical energy starting accessories"><strong>Battery:</strong> Stores electrical energy for starting and accessories. <em>(ইঞ্জিন স্টার্ট ও ডিভাইস চালায়)</em></li>
+            <li class="term" data-term="Brake Disc rotor caliper pads stop"><strong>Brake Disc (Rotor):</strong> Rotating disc clamped by pads to slow wheels. <em>(ডিস্কে প্যাড চাপ দিয়ে ব্রেক)</em></li>
+            <li class="term" data-term="Brake Drum shoe braking"><strong>Brake Drum:</strong> Drum surface used with brake shoes. <em>(ড্রাম-শু ব্রেক)</em></li>
+            <li class="term" data-term="Brake Fluid hydraulic pedal force"><strong>Brake Fluid:</strong> Hydraulic fluid that transmits pedal force. <em>(হাইড্রোলিক তরল)</em></li>
+            <li class="term" data-term="Brake Pad shoe friction"><strong>Brake Pad/Shoe:</strong> Friction material that creates braking force. <em>(ঘর্ষণ প্যাড/শু)</em></li>
+            <li class="term" data-term="Bushing bush vibration wear joint"><strong>Bush/Bushing:</strong> Sleeve reducing vibration/wear at joints. <em>(জয়েন্টে কম্পন/ঘর্ষণ কমায়)</em></li>
+          </ul>
+        </details>
+
+        <!-- C -->
+        <details class="group" data-letter="C">
+          <summary>C <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Camshaft valves timing"><strong>Camshaft:</strong> Opens/closes valves in timed sequence. <em>(ভালভ নিয়ন্ত্রণ)</em></li>
+            <li class="term" data-term="Canister charcoal EVAP emission fuel vapor"><strong>Canister (Charcoal):</strong> Stores fuel vapors for EVAP emissions control. <em>(জ্বালানি বাষ্প ধরে)</em></li>
+            <li class="term" data-term="Carburetor air fuel mix"><strong>Carburetor:</strong> Mixes air and fuel (older engines). <em>(এয়ার-ফুয়েল মিশ্রণ)</em></li>
+            <li class="term" data-term="Catalytic Converter exhaust emission convert"><strong>Catalytic Converter:</strong> Converts harmful exhaust gases to less harmful. <em>(ক্ষতিকর গ্যাস কমায়)</em></li>
+            <li class="term" data-term="Chassis frame structure"><strong>Chassis:</strong> Main structural frame of the vehicle. <em>(গাড়ির মূল ফ্রেম)</em></li>
+            <li class="term" data-term="CI Engine compression ignition diesel"><strong>CI Engine:</strong> Diesel engine igniting from compression heat. <em>(ডিজেল ইঞ্জিন)</em></li>
+            <li class="term" data-term="Clutch connect disconnect engine gearbox"><strong>Clutch:</strong> Connects/disconnects engine power to gearbox. <em>(ইঞ্জিন-গিয়ার সংযোগ)</em></li>
+            <li class="term" data-term="Coil Spring suspension support"><strong>Coil Spring:</strong> Suspension spring supporting weight. <em>(সাসপেনশন স্প্রিং)</em></li>
+            <li class="term" data-term="Coolant overheating antifreeze"><strong>Coolant:</strong> Absorbs heat; prevents overheating/freezing. <em>(ইঞ্জিন ঠান্ডা রাখে)</em></li>
+            <li class="term" data-term="Crankshaft piston motion rotation"><strong>Crankshaft:</strong> Converts piston motion into rotation. <em>(গতিকে ঘূর্ণনে রূপান্তর)</em></li>
+            <li class="term" data-term="Cruise Control maintain speed"><strong>Cruise Control:</strong> Maintains a set speed automatically. <em>(স্বয়ংক্রিয় গতিনিয়ন্ত্রণ)</em></li>
+            <li class="term" data-term="CV Joint constant velocity driveshaft"><strong>CV Joint:</strong> Smooth power delivery at angles. <em>(কোণে শক্তি সরবরাহ)</em></li>
+            <li class="term" data-term="Cylinder combustion chamber"><strong>Cylinder:</strong> Chamber where combustion occurs. <em>(দহন কক্ষ)</em></li>
+          </ul>
+        </details>
+
+        <!-- D -->
+        <details class="group" data-letter="D">
+          <summary>D <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Damper shock absorber suspension"><strong>Damper (Shock Absorber):</strong> Controls suspension oscillations. <em>(ঝাঁকুনি শোষণ)</em></li>
+            <li class="term" data-term="Differential turn wheel speed split torque"><strong>Differential:</strong> Allows wheels to rotate at different speeds. <em>(টার্নে ভিন্ন গতি)</em></li>
+            <li class="term" data-term="Dipstick engine oil level"><strong>Dipstick:</strong> Rod for checking engine oil level. <em>(তেল মাপার দন্ড)</em></li>
+            <li class="term" data-term="Disc Brake caliper pad rotor"><strong>Disc Brake:</strong> Pads clamp rotor to stop wheels. <em>(ডিস্ক-প্যাড ব্রেক)</em></li>
+            <li class="term" data-term="DOHC double overhead cam"><strong>DOHC:</strong> Dual overhead camshafts operating valves. <em>(ডাবল ওভারহেড ক্যাম)</em></li>
+            <li class="term" data-term="Drive Belt serpentine alternator pump"><strong>Drive/Serpentine Belt:</strong> Drives alternator, pumps, etc. <em>(এক্সেসরি চালায়)</em></li>
+            <li class="term" data-term="Driveshaft propeller torque transfer"><strong>Driveshaft/Propeller Shaft:</strong> Transfers torque in drivetrain. <em>(টর্ক স্থানান্তর)</em></li>
+          </ul>
+        </details>
+
+        <!-- E -->
+        <details class="group" data-letter="E">
+          <summary>E <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="ECU engine electronic control unit"><strong>ECU:</strong> Controls engine/electronic functions. <em>(ইঞ্জিন/ইলেকট্রনিক নিয়ন্ত্রক)</em></li>
+            <li class="term" data-term="EGR valve exhaust gas recirculation NOx"><strong>EGR Valve:</strong> Recirculates exhaust gas to reduce NOx. <em>(নক্স কমায়)</em></li>
+            <li class="term" data-term="EFI electronic fuel injection"><strong>EFI:</strong> Electronically metered fuel delivery. <em>(ইলেকট্রনিক ফুয়েল ইনজেকশন)</em></li>
+            <li class="term" data-term="Exhaust Manifold collect gases"><strong>Exhaust Manifold:</strong> Collects exhaust gases from cylinders. <em>(গ্যাস সংগ্রহ)</em></li>
+          </ul>
+        </details>
+
+        <!-- F -->
+        <details class="group" data-letter="F">
+          <summary>F <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Fan Belt cooling fan accessory"><strong>Fan Belt:</strong> Belt that drives fan or accessories. <em>(ফ্যান/এক্সেসরি বেল্ট)</em></li>
+            <li class="term" data-term="Fuel Filter contaminants clean"><strong>Fuel Filter:</strong> Removes contaminants from fuel. <em>(জ্বালানি পরিষ্কার)</em></li>
+            <li class="term" data-term="Fuel Injector spray atomize"><strong>Fuel Injector:</strong> Sprays atomized fuel. <em>(জ্বালানি ছিটায়)</em></li>
+            <li class="term" data-term="Fuel Pump tank to engine"><strong>Fuel Pump:</strong> Moves fuel from tank to engine. <em>(ট্যাংক থেকে ইঞ্জিন)</em></li>
+            <li class="term" data-term="Fuse protection overcurrent"><strong>Fuse:</strong> Opens circuit on overcurrent. <em>(অতিরিক্ত কারেন্টে বিচ্ছিন্ন)</em></li>
+          </ul>
+        </details>
+
+        <!-- G -->
+        <details class="group" data-letter="G">
+          <summary>G <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Gasket seal prevent leaks"><strong>Gasket:</strong> Seal preventing fluid/gas leaks. <em>(লিক রোধ)</em></li>
+            <li class="term" data-term="Gearbox transmission speed torque"><strong>Gearbox/Transmission:</strong> Gear set controlling speed & torque. <em>(গতি/টর্ক নিয়ন্ত্রণ)</em></li>
+            <li class="term" data-term="Ground Clearance lowest distance"><strong>Ground Clearance:</strong> Distance from ground to lowest point. <em>(মাটি থেকে ফাঁক)</em></li>
+          </ul>
+        </details>
+
+        <!-- H -->
+        <details class="group" data-letter="H">
+          <summary>H <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Handbrake parking brake hold"><strong>Handbrake/Parking Brake:</strong> Holds vehicle stationary. <em>(গাড়ি থামিয়ে রাখা)</em></li>
+            <li class="term" data-term="Head Gasket seal cylinder head block"><strong>Head Gasket:</strong> Seals head to block. <em>(হেড-ব্লক সিল)</em></li>
+            <li class="term" data-term="Horsepower engine power unit"><strong>Horsepower (HP):</strong> Engine power unit. <em>(শক্তির একক)</em></li>
+            <li class="term" data-term="Hybrid Vehicle engine electric motor"><strong>Hybrid Vehicle:</strong> Uses engine + electric motor. <em>(জ্বালানি+বিদ্যুৎ)</em></li>
+          </ul>
+        </details>
+
+        <!-- I -->
+        <details class="group" data-letter="I">
+          <summary>I <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Ignition Coil high voltage spark plug"><strong>Ignition Coil:</strong> Steps up voltage for spark. <em>(উচ্চ ভোল্টেজ)</em></li>
+            <li class="term" data-term="Ignition Switch on off electrical"><strong>Ignition Switch:</strong> Controls ignition/electrics. <em>(চালু/বন্ধ)</em></li>
+            <li class="term" data-term="Intake Manifold air distribution"><strong>Intake Manifold:</strong> Distributes air to cylinders. <em>(বায়ু বিতরণ)</em></li>
+          </ul>
+        </details>
+
+        <!-- J -->
+        <details class="group" data-letter="J">
+          <summary>J <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Jack lift vehicle"><strong>Jack:</strong> Device to lift the vehicle. <em>(গাড়ি তোলা)</em></li>
+          </ul>
+        </details>
+
+        <!-- K -->
+        <details class="group" data-letter="K">
+          <summary>K <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Knock Sensor detonation timing ECU"><strong>Knock Sensor:</strong> Detects detonation; ECU adjusts timing. <em>(নকিং শনাক্ত)</em></li>
+            <li class="term" data-term="Kick Starter motorcycle manual start"><strong>Kick Starter (Motorcycle):</strong> Manual lever to start engine. <em>(কিকে স্টার্ট)</em></li>
+          </ul>
+        </details>
+
+        <!-- L -->
+        <details class="group" data-letter="L">
+          <summary>L <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Lambda O2 oxygen sensor exhaust"><strong>Lambda/O₂ Sensor:</strong> Measures oxygen in exhaust. <em>(অক্সিজেন মাপে)</em></li>
+            <li class="term" data-term="Leaf Spring suspension"><strong>Leaf Spring:</strong> Multi-layer suspension spring. <em>(পাতা স্প্রিং)</em></li>
+            <li class="term" data-term="LPG CNG alternative fuel"><strong>LPG/CNG System:</strong> Alternative gaseous fuel system. <em>(বিকল্প গ্যাসীয় জ্বালানি)</em></li>
+          </ul>
+        </details>
+
+        <!-- M -->
+        <details class="group" data-letter="M">
+          <summary>M <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Manual Transmission clutch driver shift"><strong>Manual Transmission:</strong> Driver-operated gear shifting. <em>(হস্তচালিত)</em></li>
+            <li class="term" data-term="MAP Sensor manifold absolute pressure"><strong>MAP Sensor:</strong> Measures manifold absolute pressure. <em>(চাপ সেন্সর)</em></li>
+            <li class="term" data-term="MAF Sensor mass airflow intake"><strong>MAF Sensor:</strong> Measures incoming air mass. <em>(বায়ু প্রবাহ সেন্সর)</em></li>
+            <li class="term" data-term="Monocoque body structure"><strong>Monocoque:</strong> Load-bearing body structure without separate frame. <em>(ফ্রেমবিহীন)</em></li>
+            <li class="term" data-term="Motor Oil engine oil lubrication cooling"><strong>Motor Oil:</strong> Lubricates and cools engine parts. <em>(লুব্রিকেশন)</em></li>
+            <li class="term" data-term="Muffler silencer exhaust noise"><strong>Muffler/Silencer:</strong> Reduces exhaust noise. <em>(শব্দ কমায়)</em></li>
+            <li class="term" data-term="Motorcycle clutch plate friction disc"><strong>Clutch Plate (Motorcycle):</strong> Friction disc in clutch pack. <em>(ক্লাচ প্লেট)</em></li>
+            <li class="term" data-term="Motorcycle carb jet fuel orifice"><strong>Carb Jet (Motorcycle):</strong> Calibrated fuel orifice. <em>(কার্ব জেট)</em></li>
+            <li class="term" data-term="Motorcycle CDI ignition module"><strong>CDI Unit (Motorcycle):</strong> Capacitor-discharge ignition module. <em>(সিডিআই)</em></li>
+          </ul>
+        </details>
+
+        <!-- O -->
+        <details class="group" data-letter="O">
+          <summary>O <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Overheating engine high temperature cooling failure"><strong>Overheating:</strong> Excess engine temperature due to cooling issues. <em>(অতিরিক্ত গরম)</em></li>
+          </ul>
+        </details>
+
+        <!-- P -->
+        <details class="group" data-letter="P">
+          <summary>P <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="PCV valve crankcase ventilation"><strong>PCV Valve:</strong> Controls crankcase vapors. <em>(ক্র্যাঙ্ককেস বায়ু চলাচল)</em></li>
+            <li class="term" data-term="Piston up down power"><strong>Piston:</strong> Moves in cylinder to produce power. <em>(পিস্টন গতি)</em></li>
+            <li class="term" data-term="Power Steering assist easy steering"><strong>Power Steering:</strong> Steering assistance reduces effort. <em>(স্টিয়ারিং সহজ)</em></li>
+          </ul>
+        </details>
+
+        <!-- R -->
+        <details class="group" data-letter="R">
+          <summary>R <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Radiator heat exchanger cool coolant"><strong>Radiator:</strong> Cools coolant via airflow. <em>(কুল্যান্ট ঠান্ডা)</em></li>
+            <li class="term" data-term="Rim wheel hoop tyre"><strong>Rim:</strong> Metal hoop holding the tyre. <em>(ধাতব রিং)</em></li>
+          </ul>
+        </details>
+
+        <!-- S -->
+        <details class="group" data-letter="S">
+          <summary>S <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Shock Absorber damper bounce control"><strong>Shock Absorber:</strong> Controls bounce; see Damper. <em>(ঝাঁকুনি নিয়ন্ত্রণ)</em></li>
+            <li class="term" data-term="Spark Plug ignite mixture petrol SI engine"><strong>Spark Plug:</strong> Creates spark to ignite mixture (SI engines). <em>(স্পার্ক)</em></li>
+            <li class="term" data-term="Starter Motor crank engine"><strong>Starter Motor:</strong> Cranks engine to start. <em>(স্টার্ট দেয়)</em></li>
+            <li class="term" data-term="Steering Rack box turn wheels"><strong>Steering Rack/Box:</strong> Turns wheels by steering input. <em>(চাকা ঘোরায়)</em></li>
+            <li class="term" data-term="Strut spring damper unit"><strong>Strut:</strong> Suspension unit combining spring & damper. <em>(স্প্রিং+ড্যাম্পার)</em></li>
+            <li class="term" data-term="Suspension support absorb road shocks"><strong>Suspension:</strong> Supports body and absorbs road shocks. <em>(সাসপেনশন)</em></li>
+          </ul>
+        </details>
+
+        <!-- T -->
+        <details class="group" data-letter="T">
+          <summary>T <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Thermostat coolant flow temperature control"><strong>Thermostat:</strong> Controls coolant flow based on temperature. <em>(তাপমাত্রা নিয়ন্ত্রক)</em></li>
+            <li class="term" data-term="Throttle Body air intake control"><strong>Throttle Body:</strong> Controls airflow into engine. <em>(বায়ু নিয়ন্ত্রণ)</em></li>
+            <li class="term" data-term="Tie Rod steering linkage"><strong>Tie Rod:</strong> Links steering rack to hub. <em>(লিঙ্কেজ)</em></li>
+            <li class="term" data-term="Torque rotational force engine drivetrain"><strong>Torque:</strong> Rotational force from engine/drivetrain. <em>(ঘূর্ণনশক্তি)</em></li>
+            <li class="term" data-term="Turbocharger exhaust driven compressor boost"><strong>Turbocharger:</strong> Exhaust-driven compressor increasing intake pressure. <em>(টার্বো বুস্ট)</em></li>
+            <li class="term" data-term="Tyre tire traction rubber"><strong>Tyre (Tire):</strong> Rubber covering providing traction. <em>(রাবার টায়ার)</em></li>
+          </ul>
+        </details>
+
+        <!-- V -->
+        <details class="group" data-letter="V">
+          <summary>V <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="V-belt accessory drive"><strong>V-belt:</strong> Trapezoid belt for accessory drives. <em>(ভি-বেল্ট)</em></li>
+            <li class="term" data-term="VIN vehicle identification number"><strong>VIN:</strong> Vehicle Identification Number. <em>(একক শনাক্তকরণ)</em></li>
+          </ul>
+        </details>
+
+        <!-- W -->
+        <details class="group" data-letter="W">
+          <summary>W <span class="count"></span></summary>
+          <ul>
+            <li class="term" data-term="Water Pump coolant circulate"><strong>Water Pump:</strong> Circulates coolant. <em>(কুল্যান্ট প্রবাহ)</em></li>
+            <li class="term" data-term="Wheel Alignment camber caster toe"><strong>Wheel Alignment:</strong> Adjusts wheel angles to spec. <em>(চাকার কোণ সমন্বয়)</em></li>
+            <li class="term" data-term="Wheel Balancing weight distribution"><strong>Wheel Balancing:</strong> Evenly distributes weight around wheel. <em>(ওজন ভারসাম্য)</em></li>
+            <li class="term" data-term="Wheel Bearing smooth rotation"><strong>Wheel Bearing:</strong> Allows smooth wheel rotation. <em>(বিয়ারিং)</em></li>
+            <li class="term" data-term="Windscreen Washer Wiper clean visibility"><strong>Windscreen Washer/Wiper:</strong> Cleans windshield for visibility. <em>(গ্লাস পরিষ্কার)</em></li>
+          </ul>
+        </details>
       </div>
     </section>
 
-    <!-- SHORT Q&A -->
-    <section>
-      <h2>Short Questions & Answers</h2>
+    <!-- ===== Short Q&A ===== -->
+    <section id="qa">
+      <h2>Short Questions &amp; Answers</h2>
       <details open>
         <summary>Basics</summary>
         <ul>
-          <li><strong>Q:</strong> Primary function of an internal combustion engine? <br><strong>A:</strong> Convert fuel energy into mechanical power. <em>(বাংলা: জ্বালানি শক্তিকে যান্ত্রিক শক্তিতে রূপান্তর)</em></li>
-          <li><strong>Q:</strong> Tool to tighten/loosen bolts? <br><strong>A:</strong> Wrench/Spanner. <em>(রেঞ্চ/স্প্যানার)</em></li>
-          <li><strong>Q:</strong> What does the alternator do? <br><strong>A:</strong> Charges battery and powers electrics while running. <em>(ব্যাটারি চার্জ)</em></li>
-          <li><strong>Q:</strong> Function of the radiator? <br><strong>A:</strong> Cools the coolant to remove engine heat. <em>(কুল্যান্ট ঠান্ডা)</em></li>
-          <li><strong>Q:</strong> Why use engine oil? <br><strong>A:</strong> Lubrication, cooling, cleaning, sealing, and corrosion protection. <em>(লুব্রিকেশন ও সুরক্ষা)</em></li>
+          <li><strong>Q:</strong> Primary function of an internal combustion engine?<br><strong>A:</strong> Convert fuel energy into mechanical power. <em>(বাংলা: জ্বালানি শক্তি → যান্ত্রিক শক্তি)</em></li>
+          <li><strong>Q:</strong> Tool to tighten/loosen bolts?<br><strong>A:</strong> Wrench/Spanner. <em>(রেঞ্চ/স্প্যানার)</em></li>
+          <li><strong>Q:</strong> What does the alternator do?<br><strong>A:</strong> Charges battery and powers electrics while running. <em>(ব্যাটারি চার্জ)</em></li>
+          <li><strong>Q:</strong> Function of the radiator?<br><strong>A:</strong> Cool the coolant to remove engine heat. <em>(কুল্যান্ট ঠান্ডা)</em></li>
+          <li><strong>Q:</strong> Why use engine oil?<br><strong>A:</strong> Lubrication, cooling, cleaning, sealing, corrosion protection. <em>(লুব্রিকেশন ও সুরক্ষা)</em></li>
         </ul>
       </details>
       <details>
-        <summary>Electrical & Sensors</summary>
+        <summary>Electrical &amp; Sensors</summary>
         <ul>
-          <li><strong>Q:</strong> Purpose of the O₂ sensor? <br><strong>A:</strong> Measures oxygen in exhaust for correct air-fuel ratio. <em>(মিশ্রণ নিয়ন্ত্রণ)</em></li>
-          <li><strong>Q:</strong> MAP vs MAF sensor? <br><strong>A:</strong> MAP measures manifold pressure; MAF measures incoming airflow mass. <em>(চাপ বনাম বায়ু প্রবাহ)</em></li>
-          <li><strong>Q:</strong> Battery voltage (engine off/idle)? <br><strong>A:</strong> ~12.4-12.7V off; ~13.8-14.4V while charging. <em>(ভোল্টেজ মান)</em></li>
+          <li><strong>Q:</strong> Purpose of the O₂ sensor?<br><strong>A:</strong> Measures oxygen in exhaust for correct air-fuel ratio. <em>(মিশ্রণ নিয়ন্ত্রণ)</em></li>
+          <li><strong>Q:</strong> MAP vs MAF sensor?<br><strong>A:</strong> MAP = manifold pressure; MAF = incoming airflow mass. <em>(চাপ বনাম বায়ু প্রবাহ)</em></li>
+          <li><strong>Q:</strong> Battery voltage (engine off/charging)?<br><strong>A:</strong> ≈12.4–12.7V off; ≈13.8–14.4V charging. <em>(ভোল্টেজ মান)</em></li>
         </ul>
       </details>
       <details>
-        <summary>Brakes, Suspension & Tyres</summary>
+        <summary>Brakes, Suspension &amp; Tyres</summary>
         <ul>
-          <li><strong>Q:</strong> Signs of worn brake pads? <br><strong>A:</strong> Squeal, longer stopping distance, thin pad material. <em>(চিহ্ন)</em></li>
-          <li><strong>Q:</strong> Why wheel alignment? <br><strong>A:</strong> Prevents uneven wear and pulling, improves handling. <em>(সমান পরিধান ও নিয়ন্ত্রণ)</em></li>
-          <li><strong>Q:</strong> Correct tyre pressure effect? <br><strong>A:</strong> Better safety, economy, and tread life. <em>(নিরাপত্তা ও সাশ্রয়)</em></li>
+          <li><strong>Q:</strong> Signs of worn brake pads?<br><strong>A:</strong> Squeal, longer stopping distance, thin pad material. <em>(চিহ্ন)</em></li>
+          <li><strong>Q:</strong> Why wheel alignment?<br><strong>A:</strong> Prevents uneven wear/pulling; improves handling. <em>(সমান পরিধান ও নিয়ন্ত্রণ)</em></li>
+          <li><strong>Q:</strong> Correct tyre pressure effects?<br><strong>A:</strong> Better safety, economy, tread life. <em>(নিরাপত্তা ও সাশ্রয়)</em></li>
         </ul>
       </details>
       <details>
         <summary>Motorcycle Focus</summary>
         <ul>
-          <li><strong>Q:</strong> Symptoms of clogged carburetor jet? <br><strong>A:</strong> Poor idling, hesitation, stalling. <em>(কার্ব জেট ব্লক লক্ষণ)</em></li>
-          <li><strong>Q:</strong> Role of CDI unit? <br><strong>A:</strong> Controls spark timing/energy in many bikes. <em>(ইগনিশন নিয়ন্ত্রণ)</em></li>
+          <li><strong>Q:</strong> Symptoms of clogged carburetor jet?<br><strong>A:</strong> Poor idling, hesitation, stalling. <em>(কার্ব জেট ব্লক লক্ষণ)</em></li>
+          <li><strong>Q:</strong> Role of CDI unit?<br><strong>A:</strong> Controls spark timing/energy in many bikes. <em>(ইগনিশন নিয়ন্ত্রণ)</em></li>
         </ul>
       </details>
     </section>
 
-    <!-- MCQs -->
-    <section>
+    <!-- ===== MCQs ===== -->
+    <section id="mcq">
       <h2>MCQs — Practice</h2>
-      <div class="note"><span class="tag">How to use</span> Try answering first; check the answer shown after the dash.</div>
+      <div class="note"><strong>How to use:</strong> Try answering first; the correct option appears after the dash.</div>
       <ul>
         <li>1) ECU stands for — <strong>Engine Control Unit</strong>. <em>(ইঞ্জিন কন্ট্রোল ইউনিট)</em></li>
         <li>2) Which component stores electrical energy? — <strong>Battery</strong>. <em>(ব্যাটারি)</em></li>
@@ -276,8 +370,8 @@
         <li>10) Thermostat primarily — <strong>Controls coolant flow by temp</strong>. <em>(তাপমাত্রা অনুযায়ী নিয়ন্ত্রণ)</em></li>
         <li>11) O₂ sensor adjusts — <strong>Air-fuel mixture/closed-loop</strong>. <em>(মিশ্রণ নিয়ন্ত্রণ)</em></li>
         <li>12) Wheel alignment corrects — <strong>Camber/Caster/Toe</strong>. <em>(চাকার কোণ)</em></li>
-        <li>13) Timing of valve operation set by — <strong>Camshaft</strong>. <em>(ক্যামশাফ্ট)</em></li>
-        <li>14) Shock absorber purpose — <strong>Control bounce/oscillation</strong>. <em>(ঝাঁকুনি নিয়ন্ত্রণ)</em></li>
+        <li>13) Valve timing set by — <strong>Camshaft</strong>. <em>(ক্যামশাফ্ট)</em></li>
+        <li>14) Shock absorber purpose — <strong>Control bounce</strong>. <em>(ঝাঁকুনি নিয়ন্ত্রণ)</em></li>
         <li>15) Fuel is pumped from tank by — <strong>Fuel pump</strong>. <em>(ফুয়েল পাম্প)</em></li>
       </ul>
     </section>
@@ -288,7 +382,71 @@
   </footer>
 
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    // --- Utility: debounced input ---
+    function debounce(fn, ms=120){ let t; return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args), ms); }; }
+
+    const searchInput = document.getElementById('search');
+    const clearBtn = document.getElementById('clear');
+    const openAllBtn = document.getElementById('openAll');
+    const closeAllBtn = document.getElementById('closeAll');
+    const groups = Array.from(document.querySelectorAll('#groups details.group'));
+    const terms = Array.from(document.querySelectorAll('#groups .term'));
+    const yearEl = document.getElementById('y');
+
+    yearEl.textContent = new Date().getFullYear();
+
+    function updateCounts(){
+      groups.forEach(g=>{
+        const list = g.querySelectorAll('.term');
+        const visible = Array.from(list).filter(li => li.style.display !== 'none').length;
+        g.querySelector('.count').textContent = `(${visible})`;
+        g.style.display = visible === 0 ? 'none' : '';
+      });
+    }
+
+    function highlight(text, query){
+      if(!query) return text;
+      const re = new RegExp(`(${query.replace(/[.*+?^${}()|[\\]\\\\]/g,"\\\\$&")})`, 'ig');
+      return text.replace(re, '<mark>$1</mark>');
+    }
+
+    function clearHighlights(li){
+      li.innerHTML = li.innerHTML.replace(/<\/?mark>/g, '');
+    }
+
+    function runSearch(q){
+      const query = q.trim();
+      const hasQuery = query.length > 0;
+
+      groups.forEach(g => { g.style.display=''; if(hasQuery) g.open = true; });
+
+      terms.forEach(li=>{
+        clearHighlights(li);
+        if(!hasQuery){ li.style.display = ''; return; }
+        const hay = (li.dataset.term || li.textContent).toLowerCase();
+        const hit = hay.includes(query.toLowerCase());
+        li.style.display = hit ? '' : 'none';
+        if(hit){ li.innerHTML = highlight(li.innerHTML, query); }
+      });
+
+      updateCounts();
+      if(!hasQuery){ groups.forEach(g => g.style.display=''); updateCounts(); }
+    }
+
+    // Initial counts
+    updateCounts();
+
+    // Events
+    searchInput.addEventListener('input', debounce(e => runSearch(e.target.value), 80));
+    clearBtn.addEventListener('click', ()=>{
+      searchInput.value = '';
+      terms.forEach(li=>{ li.style.display=''; clearHighlights(li); });
+      groups.forEach(g => { g.style.display=''; });
+      updateCounts();
+      searchInput.focus();
+    });
+    openAllBtn.addEventListener('click', ()=> groups.forEach(g => g.open = true));
+    closeAllBtn.addEventListener('click', ()=> groups.forEach(g => g.open = false));
   </script>
 </body>
 </html>
